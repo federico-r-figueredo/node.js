@@ -1,15 +1,15 @@
-// Example #2: instance methods
+// Example #1: instance methods
 class Person {
     eat() {
         console.log("Crunch crunch crunch!");
     }
 }
 let person = new Person();
-console.log("Example #2: instance methods");
+console.log("Example #1: instance methods");
 person.eat();
 console.log("");
 
-// Example #3: handles to methods
+// Example #2: handles to methods
 class Egoist {
     speak() {
         console.log(this);
@@ -21,7 +21,7 @@ console.log("Example #2: handles to methods");
 method();
 console.log("");
 
-// Example #4: late binding
+// Example #3: late binding
 class Cake {
     taste() {
         let adjective = "delicious";
@@ -35,7 +35,7 @@ console.log("Example #3: late binding");
 cake.taste();
 console.log("");
 
-// Example #5: first order functions
+// Example #4: first order functions
 class Thing {
     getCallback() {
         function localFunction() {
@@ -51,10 +51,10 @@ console.log("Example #4: first order functions");
 callback();
 console.log("");
 
-// Example #6: report error on 'this' use outside of a class
+// Example #5: report error on 'this' use outside of a class
 // console.log(this);
 
-// Example #7: initializing object w/ constructor
+// Example #6: initializing object w/ constructor
 class SuperHero {
     constructor(firstName, lastName) {
         this.firstName = firstName;
@@ -72,7 +72,7 @@ superman.greet();
 console.log("");
 
 
-// Example #8: report error on direct 'constructor' call (on an instance)
+// Example #7: report error on direct 'constructor' call (on an instance)
 // class User {
 //     constructor(firstName, lastName) {
 //         this.firstName = firstName;
@@ -82,7 +82,7 @@ console.log("");
 // let fede = new User("Federico", "Figueredo");
 // fede = fede.constructor();
 
-// Example #9: report error on 'return' statement inside a constructor
+// Example #8: report error on 'return' statement inside a constructor
 // class Employee {
 //     constructor(firstName, lastName) {
 //         this.firstName = firstName;
@@ -95,7 +95,7 @@ console.log("");
 
 // let ceci = new User("Cecilia", "Bianchi");
 
-// Example #10: class based inheritance
+// Example #9: class based inheritance
 class DoughnutA {
     cook() {
         console.log("Fry until golden brown.");
@@ -115,7 +115,7 @@ class DoughnutB {
     }
 }
 
-// Example #11: super keyword
+// Example #10: super keyword
 class BostonCreamB extends DoughnutB {
     cook() {
         super.cook();
@@ -126,7 +126,7 @@ console.log("Example #11: super keyword");
 BostonCreamB().cook();
 console.log("");
 
-// Example #12: super keyword bound to superclass of object that declared (not the one executing it)
+// Example #11: super keyword bound to superclass of object that declared (not the one executing it)
 class A {
     method() {
         console.log("Method A");
